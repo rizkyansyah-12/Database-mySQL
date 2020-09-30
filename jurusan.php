@@ -1,6 +1,6 @@
 <?php 
-include 'config/koneksi.php';
-$result = Database-mySQL_master_query($conn, "SELECT * FROM jurusan");
+$conn = mysqli_connect('localhost','root', '' , 'db_mahasiswa');
+$result = mysqli_query ($conn, "SELECT*FROM jurusan");
 ?>
 
 <!DOCTYPE html>
@@ -15,15 +15,17 @@ $result = Database-mySQL_master_query($conn, "SELECT * FROM jurusan");
     <a href="add-jurusan.php">add data</a>
     <table border="1" cellpadding="7" cellspacing="0">
         <tr>
-             <td>iD</td>
-             <td>Nama Jurusan</td> 
+             <td>ID</td> 
+             <td>Nama</td>
+             <td>aksi</td>
+
          </tr>
          <?php foreach ($result as $row): ?>
-         <tr>
+          <tr>
              <td><?php echo $row ['id']; ?></td>
              <td><?php echo $row ['nama']; ?></td>
              <td><button> edit </button> | <button>hapus </button></td>
-         </tr>
+          </tr>
          <?php endforeach  ?>
      </table>
  </body>

@@ -43,7 +43,7 @@ $result = mysqli_query($conn, "SELECT * FROM mahasiswa");
             <td> <?php echo $row ['alamat']; ?></td>
             <td> <?php echo $row ['no_telpon']; ?></td>
             <td> <?php echo $row ['email']; ?></td>
-            <td><a href=""../hapus.php?id=<?= $row['id']; ?>><button> Edit </button></a> | <a href="../hapus.php?id=<?= $row['id']; ?>"><button>Hapus </button></a></td>
+            <td><a href=""../edit.php?id=<?= $row['id']; ?>><button> Edit </button></a> | <a href="../hapus.php?id=<?= $row['id']; ?>"><button>Hapus </button></a></td>
           </tr>
          <?php endforeach  ?>
      </table>

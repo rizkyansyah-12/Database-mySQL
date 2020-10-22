@@ -12,6 +12,7 @@ $result = mysqli_query($conn, "SELECT * FROM jurusan");
 	<title>Add Jurusan</title>
 </head>
 <body>
+	<h3>Regisrtra</h3>
 	<form action="" method="POST">
 		<label for="jur">jurusan</label>
 		<input type="text" id="Jur" name="jurusan">

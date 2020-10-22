@@ -30,7 +30,7 @@ $result = mysqli_query($conn, "SELECT * FROM jurusan");
         <label for="alamat">alamat</label>
         <textarea rowns="3" cols="30" name="alamat" id="alamat"></textarea> <br>
         <label for="telepon">nomor telepon</label>
-        <input type="text" id="telepon" name="telepon" required><br>
+        <input type="text" id="no_telepon" name="no_telepon" required><br>
          <label for="email">Email</label>
         <input type="email" id="email" name="email" required>
         <br><br><button type ="submit" name="submit">Simpan</button>
